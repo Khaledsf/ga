@@ -1,0 +1,92 @@
+
+<html>
+
+<!DOCTYPE html>
+
+<head>
+
+<title>About me</title>
+
+<link rel="stylesheet"  href="aboutmestyle.css" type="text/css">
+
+<script type="text/javascript">
+		     function Slider() {
+				var slider = document.getElementById("slider");
+				var current = 0;
+				var scroll = function() {
+					for(var i = 0 ; i < slider.children.length ; i++) {
+						var child = slider.children[i];
+						if(i === current) {
+							child.style.display="block"
+						} else {
+							child.style.display="none";
+						}
+					}
+					current = ( current + 1 ) % slider.children.length;
+				}
+				setInterval(scroll, 1500);
+			}
+		   
+		   </script>
+
+
+</head>
+
+<body onload="Slider()">
+
+<div id="slider">
+	<img class="trans" src="IMG_0313.png">
+	<img class="trans"src="IMG_0344.png">
+	<img class="trans"src="IMG_0375.png">
+
+
+
+
+</div>
+
+
+<div id="middlesec">
+	
+	<img src="lockeroom.png">
+	<h3>about me? well...ok</h3>
+	<p> My is Khaled, I have been living in San Francisco for eight years and I absolutly love it.  I was born and raised in Algeria on the northern Coast of Africa before I moved here in early 2006.</p>
+	<p>I love playing and watching soccer, going for a hike and exploring different kinds of food and from that perspective the Bay area has a lot to offer.</p>
+	
+</div>
+    
+
+<div id="bottomsec">
+	
+	<img id="sahara" src="sahara.png">
+	
+	<h3>What I am doing with my life</h3>
+	
+	<p>After working in hospitality and hotel industry for about 4 years the need of a change that bring excitement and creativity was felt so left my job and I signed up for computer networking program at San Francisco City College which I obtained from a Certificate in windows 7 tech support. </p>
+
+
+</div>
+
+<footer>
+<ul>
+<li>Khaled Bouchama</li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+<li>email: kbouchama@gmail.com</li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+<li>cell: (415) 424 xxxx</li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+</ul>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
